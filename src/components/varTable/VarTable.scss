@@ -1,0 +1,61 @@
+.var-table-wrapper {
+  height: 70%;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  .show-plot {
+    background: #8884d8;
+    border-radius: 0.5rem;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .overflow-wrapper {
+    overflow: auto;
+  }
+}
+.var-table {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  flex-grow: 1;
+
+  .initial-row,
+  .table-row {
+    display: flex;
+  }
+  .initial-row {
+    border: 1px solid black;
+  }
+  .table-row {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+  }
+  .initial-row > div:not(:last-child),
+  .table-row > div:not(:last-child) {
+    border-right: 1px solid black;
+  }
+  .initial-row > div,
+  .table-row > div {
+    text-align: center;
+  }
+  .id {
+    width: 10%;
+  }
+  .value {
+    width: 20%;
+  }
+  .frequency {
+    width: 20%;
+  }
+  .relative-frequency {
+    width: 20%;
+  }
+  .emp-value {
+    width: 30%;
+  }
+}

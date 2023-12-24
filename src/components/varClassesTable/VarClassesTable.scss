@@ -1,0 +1,21 @@
+.numClasses {
+  width: 100px;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+}
+.var-classes-table-wrapper {
+  height: 65%;
+  display: flex;
+
+  gap: 25px;
+
+  .show-histogram {
+    height: fit-content;
+    background: #8884d8;
+    border-radius: 0.5rem;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+}
