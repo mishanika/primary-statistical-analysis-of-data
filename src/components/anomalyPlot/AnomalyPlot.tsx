@@ -30,7 +30,7 @@ const AnomalyPlot: React.FC<AnomalyPlotProps> = ({ fileInfo, anomalyBoundaries }
   return (
     <div className="anomaly-plot-wrapper">
       <LineChart
-        width={700}
+        width={600}
         height={400}
         data={[...processedInfo, { parallel: anomalyBoundaries[0] }, { parallel: anomalyBoundaries[1] }]}
       >
